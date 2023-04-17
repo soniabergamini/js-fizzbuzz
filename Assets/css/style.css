@@ -61,3 +61,12 @@ section > div {
     border-radius: 5px;
     font-size: larger;
 }
+
+section > div:hover {
+    animation: 1.5s ease 0s infinite pulse;
+}
+
+@keyframes pulse {
+  0%, 50%, 100% { transform: scale(1, 1); }
+  30%, 80% { transform: scale(0.92, 0.95); }
+}
