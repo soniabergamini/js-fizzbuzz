@@ -49,6 +49,17 @@ header img {
 }
 
 /* MAIN STYLE */
+
+main button {
+    padding: .3em 1em;
+    font-size: larger;
+    margin: 1rem auto;
+}
+
+main button:hover {
+    color: var(--red);
+}
+
 section , hr {
     margin: 0 auto;
     width: 80%;
