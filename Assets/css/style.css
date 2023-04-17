@@ -49,13 +49,13 @@ header img {
 }
 
 /* MAIN STYLE */
-main > section {
+section , hr {
     margin: 0 auto;
     width: 80%;
     max-width: 87.5rem;
 }
 
-main > section > div {
+section > div {
     width: var(--boxSize);
     height: var(--boxSize);
     border-radius: 5px;
