@@ -13,22 +13,22 @@ document.getElementById('buttonClick1').addEventListener("click",
             // SVILUPPO LOGICA CONDIZIONALE:
             const boxContainer1 = document.getElementById("boxContainer1");
 
-            // Se Multiplo di 3 e di 5
+            // Se Multiplo di 3 e di 5 - oppure se Multiplo di 15
             if (stamp % 3 == 0 && stamp % 5 == 0) {
                 // console.log("FizzBuzz");
                 boxContainer1.innerHTML += `<div class="bgBlue dFlex justyCenter alignCenter cPointer">FizzBuzz</div>`;
 
-                // Se Solo Multiplo di 3
+            // Se Solo Multiplo di 3
             } else if (stamp % 3 == 0 && stamp % 5 != 0) {
                 // console.log("Fizz");
                 boxContainer1.innerHTML += `<div class="bgPink dFlex justyCenter alignCenter cPointer">Fizz</div>`;
 
-                // Se Solo Multiplo di 5
+            // Se Solo Multiplo di 5
             } else if (stamp % 3 != 0 && stamp % 5 == 0) {
                 // console.log("Buzz");
                 boxContainer1.innerHTML += `<div class="bgRed dFlex justyCenter alignCenter cPointer">Buzz</div>`;
 
-                // Se NON Multiplo di 3 e 5
+            // Se NON Multiplo di 3 e 5
             } else {
                 // console.log(stamp);
                 boxContainer1.innerHTML += `<div class="bgGreen dFlex justyCenter alignCenter cPointer">${stamp}</div>`;
@@ -57,8 +57,8 @@ document.getElementById('buttonClick2').addEventListener("click",
             const box = document.createElement('div');
             box.classList.add('dFlex', 'justyCenter', 'alignCenter', 'cPointer');
 
-            // Se Multiplo di 3 e di 5
-            if (stamp % 3 == 0 && stamp % 5 == 0) {
+            // Se Multiplo di 3 e di 5 - oppure se Multiplo di 15
+            if (stamp % 15 == 0) {
                 box.className += " bgBlue";
                 box.append("FizzBuzz");
                 boxContainer2.append(box);
@@ -75,8 +75,8 @@ document.getElementById('buttonClick2').addEventListener("click",
                     }
                 );
 
-                // Se Solo Multiplo di 3
-            } else if (stamp % 3 == 0 && stamp % 5 != 0) {
+            // Se Solo Multiplo di 3
+            } else if (stamp % 3 == 0) {
                 box.className += " bgPink";
                 box.append("Fizz");
                 boxContainer2.append(box);
@@ -93,8 +93,8 @@ document.getElementById('buttonClick2').addEventListener("click",
                     }
                 );
 
-                // Se Solo Multiplo di 5
-            } else if (stamp % 3 != 0 && stamp % 5 == 0) {
+            // Se Solo Multiplo di 5
+            } else if (stamp % 5 == 0) {
                 box.className += " bgRed";
                 box.append("Buzz");
                 boxContainer2.append(box);
@@ -111,7 +111,7 @@ document.getElementById('buttonClick2').addEventListener("click",
                     }
                 );
 
-                // Se NON Multiplo di 3 e 5
+            // Se NON Multiplo di 3 e 5
             } else {
                 box.className += " bgGreen";
                 box.append(stamp);
